@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-node
+  labels:
+    app: hello-node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-node
+  template:
+    metadata:
+      labels:
+        app: hello-node
+    spec:
+      containers:
+      - name: node
+        image: 255945442255.dkr.ecr.us-east-1.amazonaws.com/node-docker-zhiyong17042024:latest
+        ports:
+        - containerPort: 8080
