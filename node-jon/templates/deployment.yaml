@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: node
-        image: 255945442255.dkr.ecr.us-east-1.amazonaws.com/node-docker-zhiyong17042024:latest
+        image: public.ecr.aws/u2q1a2y8/soon-node-docker-ecr-20240422:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
