@@ -12,6 +12,6 @@ spec:
           service:
             name: hello-node
             port:
-              number: 80000
+              number: 80
         path: /
         pathType: Prefix
