@@ -24,9 +24,3 @@ version: 0.1.0
 appVersion: "1.16.0"
 
 
-aws ecr get-login-password \
-     --region us-east-1 | helm registry login \
-     --username AWS \
-     --password-stdin 255945442255.dkr.ecr.us-east-1.amazonaws.com
-
-helm push node-jon-0.1.0.tgz oci://255945442255.dkr.ecr.us-east-1.amazonaws.com/
